@@ -13,12 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axios Studio",
-  description: "Soluções 3D premium para empresas",
+  title: "Soluções 3D Profissionais para Empresas | Axios Studio",
+  description: "Modelagem 3D, prototipagem e soluções personalizadas em impressão 3D para empresas e projetos profissionais.",
     icons: {
-    icon: "/icon3.png",       // favicon principal
-    // shortcut: "/axios-removebg-preview.png",   // atalhos
-    // apple: "/axios-removebg-preview.png",      // iOS
+    icon: "/icon3.png",       
     },
 };
 

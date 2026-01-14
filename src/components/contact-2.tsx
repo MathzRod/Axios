@@ -41,9 +41,9 @@ export const Contact2 = () => {
         <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-12 lg:flex-row lg:gap-20">
           <div className="mx-auto flex max-w-sm flex-col justify-between gap-10 lg:mx-0 lg:max-w-md lg:py-4">
             <div className="text-center lg:text-left">
-              <h1 className="mb-3 text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:mb-4 lg:text-7xl">
+              <h3 className="mb-3 text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:mb-4 lg:text-7xl">
                 Entre em Contato
-              </h1>
+              </h3>
               <p className="text-lg text-gray-400">
                 Envie sua solicitação e vamos te responder no e-mail.
               </p>

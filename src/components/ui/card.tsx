@@ -8,31 +8,36 @@ import {
 
 const Example = () => {
   return (
-    <div
-      id="about-me"
-      className="
-        flex
-        flex-col md:flex-row
-        items-center md:items-center   /* agora a imagem fica no meio do texto */
-        justify-center                /* não espalha demais */
-        gap-20
-        w-full
-        bg-gradient-to-b from-[#00001A] to-[#000030]
-        px-6 md:px-52
-        py-12
-        flex-wrap
-        mx-auto
-        "
-    >
+    <section
+    id="about-me"
+    aria-labelledby="about-me-title"
+    className="
+      flex
+      flex-col md:flex-row
+      items-center md:items-center
+      justify-center
+      gap-20
+      w-full
+      bg-gradient-to-b from-[#00001A] to-[#000030]
+      px-6 md:px-52
+      py-12
+      flex-wrap
+      mx-auto
+    "
+>
+
 
       {/* FOTO */}
       <TiltCard />
 
       {/* TEXTO */}
       <div className="text-white max-w-xl flex flex-col p-6 md:pt-20 md:pl-8">
-  <h1 className="text-3xl md:text-3.9xl font-bold mb-6 text-center md:text-left">
-    Marcos Roberto dos Santos Jr.
-  </h1>
+  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
+  Marcos Roberto dos Santos Jr. <br />
+  <span className="text-[#C88D76] text-xl font-light">
+    Especialista em soluções 3D e impressão 3D profissional
+  </span>
+</h2>
 
   <div className="space-y-6 text-base md:text-lg leading-relaxed text-center md:text-left opacity-85">
     <p>
@@ -69,7 +74,7 @@ const Example = () => {
 
 
       
-    </div>
+    </section>
   );
 };
 
