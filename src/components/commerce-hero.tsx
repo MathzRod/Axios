@@ -7,42 +7,6 @@ import TextType from "./ui/textAnimation";
 import { WHATSAPP_QUOTE_LINK } from "@/lib/whatsapp";
 
 
-// --- Dados ---
-
-const categories = [
-  {
-    title: "Chaveiros",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/035/500/119/non_2x/ai-generated-3d-succulent-plant-isolated-on-transparent-background-free-png.png",
-    href: "#",
-  },
-  {
-    title: "Lembranças",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/047/920/967/large_2x/formal-shoes-isolated-on-a-transparent-background-free-png.png",
-    href: "#",
-  },
-  {
-    title: "Technology",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/035/500/119/non_2x/ai-generated-3d-succulent-plant-isolated-on-transparent-background-free-png.png",
-    href: "#",
-  },
-  {
-    title: "Accessories",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/047/920/967/large_2x/formal-shoes-isolated-on-a-transparent-background-free-png.png",
-    href: "#",
-  },
-];
-
-const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Shop", href: "#" },
-  { name: "Collections", href: "#" },
-  { name: "Blog", href: "#" },
-];
-
 // --- Componente Principal (CommerceHero) ---
 
 export function CommerceHero() {

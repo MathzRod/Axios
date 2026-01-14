@@ -60,10 +60,48 @@ const GlobalStyles = () => (
 // --- Componente Principal ---
 
 export default function Home() {
-  
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://axios-gilt.vercel.app/#website",
+        "url": "https://axios-gilt.vercel.app/",
+        "name": "Axios Studio",
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://axios-gilt.vercel.app/#organization",
+        "name": "Axios Studio",
+        "url": "https://axios-gilt.vercel.app/",
+        "logo": "https://axios-gilt.vercel.app/icon3.png",
+        "sameAs": [
+          "https://www.instagram.com/SEU_INSTAGRAM"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://axios-gilt.vercel.app/#service-modelagem3d",
+        "name": "Modelagem 3D para Empresas",
+        "provider": { "@id": "https://axios-gilt.vercel.app/#organization" },
+        "areaServed": "BR",
+        "serviceType": [
+          "Modelagem 3D",
+          "Prototipagem",
+          "Impressão 3D"
+        ],
+        "description": "Soluções 3D profissionais para empresas: modelagem, prototipagem e impressão 3D sob medida."
+      }
+    ]
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <GlobalStyles />
       <div className="work-sans">
         <Header />
