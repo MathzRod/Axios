@@ -63,6 +63,7 @@ export function ModelSection() {
           {/* CARROSSEL 1 */}
           <div className="relative flex justify-center">
             <ImageCarousel
+              priorityFirstImage
               images={[
                 { src: "/chaveiros/chaveiro1.png", alt: "Chaveiro personalizado 3D - modelo 1" },
                 { src: "/chaveiros/chaveiro2.png", alt: "Chaveiro personalizado 3D - modelo 2" },
