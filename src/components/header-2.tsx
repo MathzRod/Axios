@@ -72,7 +72,7 @@ export function Header() {
 			<nav
 				className={cn(
 					// Barra principal: usa flexbox, define altura e espaçamentos.
-					'flex h-14 w-full items-center justify-between px-4 md:h-12 md:transition-all md:ease z-99',
+					'flex h-20 w-full items-center justify-center px-4 md:h-20 md:transition-all md:ease md:justify-between z-99',
 					{
 						// Quando o usuário rola a página, reduz o padding no desktop.
 						'md:px-2': scrolled,
@@ -83,7 +83,7 @@ export function Header() {
                 <Image
                 src="/axios-removebg-preview.png"
                 alt="Descrição da imagem"
-                width={100} // Largura intrínseca (em pixels)
+                width={150} // Largura intrínseca (em pixels)
                 height={70} // Altura intrínseca (em pixels)
                 className="" // moved padding into Tailwind classes
                 priority // Carrega a imagem com prioridade para melhorar LCP
@@ -109,19 +109,7 @@ export function Header() {
 						))}
 
 				</div>
-				<Button size="icon" variant="outline" onClick={() => setOpen(!open)} className="md:hidden">
-					{/* Torna o botão quadrado, feito para ícones.
-					Estilo de borda mínima.
-					Alterna o estado "open": se estava fechado abre, se estava aberto fecha.
-					Mostra só no mobile; some no desktop. */}
-
-
-					<MenuToggleIcon open={open} className="size-5" duration={300} />
-					{/* O ícone muda (menu → X) baseado no estado do menu.
-					Define tamanho do ícone.
-					Duração da animação do ícone. */}
-					
-				</Button>
+				
 			</nav>
 
 			<div
@@ -134,38 +122,7 @@ export function Header() {
             		// Se não → fica oculto.
 				)}
 			>
-				<div
-					data-slot={open ? 'open' : 'closed'}
-					// Controla animações com base no estado do menu (aberto/fechado).
-
-					className={cn(
-						// Animações quando abre ("animate-in") e quando fecha ("animate-out").
-						'data-[slot=open]:animate-in data-[slot=open]:zoom-in-95 data-[slot=closed]:animate-out data-[slot=closed]:zoom-out-95 ease-out',
-						// Layout interno: coluna, espaçamento, preenchimento.
-						'flex h-full w-full flex-col justify-between gap-y-2 p-4',
-					)}
-				>
-					<div className="grid gap-y-2">
-						{/* Lista vertical com espaçamento entre os links. */}
-
-						{links.map((link) => (
-							<a
-								key={link.label}
-								href={link.href}
-								className={buttonVariants({
-								variant: "ghost",
-								className: "justify-start",
-								})}
-								onClick={(e) => {
-								e.preventDefault();
-								link.onClick?.();
-								setOpen(false);         // ✅ fecha o menu no mobile
-								}}
-							>
-								{link.label}
-							</a>
-							))}
-					</div>
+				<div className="flex flex-col items-center gap-6 mt-8">
 					
 				</div>
 			</div>
