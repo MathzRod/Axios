@@ -4,14 +4,8 @@ import { Instagram, MessageCircle } from "lucide-react";
 interface FooterProps {
   logo: React.ReactNode;
   brandName: string;
-  mainLinks: Array<{
-    href: string;
-    label: string;
-  }>;
-  legalLinks: Array<{
-    href: string;
-    label: string;
-  }>;
+  mainLinks: Array<{ href: string; label: string }>;
+  legalLinks: Array<{ href: string; label: string }>;
   copyright: {
     text: string;
     license?: string;
@@ -26,15 +20,21 @@ export function Footer({
   copyright,
 }: FooterProps) {
   return (
-    <footer className="pb-6 pt-16 lg:pb-8 lg:pt-24">
-      <div className="px-4 lg:px-8">
+    <footer className="pt-16 pb-6 lg:pt-24 lg:pb-8">
+      <div className="px-4 lg:px-8 max-w-7xl mx-auto">
 
         {/* TOPO */}
-        <div className="md:flex md:items-start md:justify-between">
+        <div
+          className="
+            flex flex-col items-center text-center gap-6
+            md:flex-row md:items-start md:justify-between md:text-left
+          "
+        >
+          {/* LOGO + NOME */}
           <a
             href="/"
-            className="flex items-center gap-x-2"
             aria-label={brandName}
+            className="flex items-center gap-2"
           >
             {logo}
             {brandName && (
@@ -42,9 +42,8 @@ export function Footer({
             )}
           </a>
 
-          {/* REDES SOCIAIS FIXAS */}
-          <ul className="flex list-none mt-6 md:mt-0 space-x-3">
-            {/* WhatsApp */}
+          {/* REDES SOCIAIS */}
+          <ul className="flex list-none gap-3">
             <li>
               <Button
                 variant="secondary"
@@ -63,7 +62,6 @@ export function Footer({
               </Button>
             </li>
 
-            {/* Instagram */}
             <li>
               <Button
                 variant="secondary"
@@ -84,14 +82,30 @@ export function Footer({
           </ul>
         </div>
 
-        {/* LINKS */}
-        <div className="pt-6 md:mt-4 md:pt-8 lg:grid lg:grid-cols-10">
+        {/* CONTEÚDO */}
+        <div
+          className="
+            mt-10
+            flex flex-col items-center text-center gap-6
+            lg:grid lg:grid-cols-10 lg:items-start lg:text-left
+          "
+        >
+          {/* COPYRIGHT */}
+          <div
+            className="
+              text-sm leading-6 text-muted-foreground
+              lg:col-[1/4] lg:row-[1/3]
+            "
+          >
+            <div>{copyright.text}</div>
+            {copyright.license && <div>{copyright.license}</div>}
+          </div>
 
           {/* LINKS PRINCIPAIS */}
           <nav className="lg:col-[4/11]">
-            <ul className="list-none flex flex-wrap -my-1 -mx-2 lg:justify-end">
+            <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 lg:justify-end">
               {mainLinks.map((link, i) => (
-                <li key={i} className="my-1 mx-2 shrink-0">
+                <li key={i}>
                   <a
                     href={link.href}
                     className="text-sm text-white underline-offset-4 hover:underline"
@@ -104,10 +118,10 @@ export function Footer({
           </nav>
 
           {/* LINKS LEGAIS */}
-          <div className="mt-6 lg:mt-0 lg:col-[4/11]">
-            <ul className="list-none flex flex-wrap -my-1 -mx-3 lg:justify-end">
+          <nav className="lg:col-[4/11]">
+            <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 lg:justify-end">
               {legalLinks.map((link, i) => (
-                <li key={i} className="my-1 mx-3 shrink-0">
+                <li key={i}>
                   <a
                     href={link.href}
                     className="text-sm text-muted-foreground underline-offset-4 hover:underline"
@@ -117,13 +131,7 @@ export function Footer({
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* COPYRIGHT */}
-          <div className="mt-6 text-sm leading-6 text-muted-foreground whitespace-nowrap lg:mt-0 lg:row-[1/3] lg:col-[1/4]">
-            <div>{copyright.text}</div>
-            {copyright.license && <div>{copyright.license}</div>}
-          </div>
+          </nav>
         </div>
       </div>
     </footer>

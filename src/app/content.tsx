@@ -8,11 +8,9 @@ import { Footer } from "@/components/ui/footer";
 import { Contact2 } from "@/components/contact-2";
 import { TestimonialsColumn } from "@/components/testimonials-columns-1";
 import { Feature } from "@/components/ui/feature-with-image";
-import { FaqsSection } from "@/components/faqs-1";
 import { SmoothLayout } from "@/components/ui/scrollSmooth";
 
 // Bibliotecas
-import { Github, Twitter } from "lucide-react";
 import { motion } from "framer-motion"; // Assumindo que você usa 'framer-motion' ao invés de 'motion/react'
 import { ModelSection } from "@/components/products";
 import { AnimateIn } from "@/components/ui/animateIn";
@@ -322,9 +320,9 @@ export default function Content() {
             }
             brandName=""
             mainLinks={[
-              { href: "/products", label: "Products" },
-              { href: "/about", label: "About" },
-              { href: "/contact", label: "Contact" },
+              
+              { href: "#about-me", label: "About" },
+              { href: "#contact", label: "Contact" },
             ]}
             legalLinks={[
               { href: "/privacy", label: "Privacy" },
