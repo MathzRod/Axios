@@ -81,7 +81,7 @@ export const Contact2 = () => {
             </div>
 
             <Button type="submit" className="w-full text-lg font-semibold py-6 bg-[#c77757]" disabled={loading}>
-              {loading ? "Enviando..." : "Send Message"}
+              {loading ? "Enviando..." : "Enviar Mensagem"}
             </Button>
 
             {status === "ok" && (
