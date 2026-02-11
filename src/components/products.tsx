@@ -65,10 +65,10 @@ export function ModelSection() {
             <ImageCarousel
               priorityFirstImage
               images={[
-                { src: "/chaveiros/chaveiro1.png", alt: "Chaveiro personalizado 3D - modelo 1" },
+                { src: "/chaveiros/chaveiro1.jpeg", alt: "Chaveiro personalizado 3D - modelo 1" },
                 { src: "/chaveiros/chaveiro2.png", alt: "Chaveiro personalizado 3D - modelo 2" },
-                { src: "/chaveiros/chaveiro3.png", alt: "Chaveiro personalizado 3D - modelo 3" },
-                { src: "/chaveiros/chaveiro4.png", alt: "Chaveiro personalizado 3D - modelo 4" },
+                { src: "/chaveiros/chaveiro3.jpeg", alt: "Chaveiro personalizado 3D - modelo 3" },
+                { src: "/chaveiros/chaveiro4.jpeg", alt: "Chaveiro personalizado 3D - modelo 4" },
               ]}
               // Performance: sombra mais leve no mobile, mais forte no md+
               className="drop-shadow-[0_0_40px_rgba(200,141,118,0.25)] md:drop-shadow-[0_0_120px_rgba(200,141,118,0.35)]"
@@ -79,8 +79,8 @@ export function ModelSection() {
           <div className="relative flex justify-center order-last lg:order-none mb-16">
             <ImageCarousel
               images={[
-                { src: "/totens/totem1.png", alt: "Totem corporativo 3D - modelo 1" },
-                { src: "/totens/totem2.png", alt: "Totem corporativo 3D - modelo 2" },
+                { src: "/totens/totem1.jpeg", alt: "Totem corporativo 3D - modelo 1" },
+                { src: "/totens/totem2.jpeg", alt: "Totem corporativo 3D - modelo 2" },
                 { src: "/totens/totem3.png", alt: "Totem corporativo 3D - modelo 3" },
                 { src: "/totens/totem4.png", alt: "Totem corporativo 3D - modelo 4" },
               ]}
