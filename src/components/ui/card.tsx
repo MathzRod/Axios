@@ -34,7 +34,7 @@ const Example = () => {
       <div className="text-white max-w-xl flex flex-col p-6 md:pt-20 md:pl-8">
   <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
   Marcos Roberto dos Santos Jr. <br />
-  <span className="text-[#C88D76] text-xl font-light">
+  <span className="text-[#C88D76] text-xl font-bold">
     Especialista em soluções 3D e impressão 3D profissional
   </span>
 </h2>

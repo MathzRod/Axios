@@ -117,10 +117,10 @@ const Testimonials = () => {
             </div>
           </div>
           <h2 className="mt-5 text-center text-3xl font-bold tracking-tighter sm:text-4xl lg:text-5xl">
-            What our users say
+            O que nossos clientes dizem sobre nós
           </h2>
           <p className="mt-5 text-center text-lg opacity-75">
-            See what our customers have to say about us.
+            Veja o que nossos clientes tem a dizer sobre nossos produtos e serviços. A satisfação deles é nossa maior recompensa.
           </p>
         </motion.div>
         <div className="mt-10 flex max-h-[740px] justify-center gap-6 overflow-hidden bg-[#000030]
