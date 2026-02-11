@@ -43,12 +43,6 @@ const testimonials = [
     role: "Loja de lingerie e moda intima",
   },
   {
-    text: "Its robust features and quick support have transformed our workflow, making us significantly more efficient.",
-    image: "/clientes/cliente5.jpeg",
-    name: "Zainab Hussain",
-    role: "Cliente",
-  },
-  {
     text: "Sao perfeitos",
     image: "/clientes/cliente6.jpeg",
     name: "Gabriela Sousa",
