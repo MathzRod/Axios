@@ -19,59 +19,54 @@ import { AnimateIn } from "@/components/ui/animateIn";
 
 const testimonials = [
   {
-    text: "This ERP revolutionized our operations, streamlining finance and inventory. The cloud-based platform keeps us productive, even remotely.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Briana Patton",
-    role: "Operations Manager",
+    text: "Amei!!!! Igual ao Anuncio.",
+    image: "/clientes/cliente1.jpeg",
+    name: "Thaina Saes",
+    role: "Cliente TikTok Shop",
   },
   {
-    text: "Implementing this ERP was smooth and quick. The customizable, user-friendly interface made team training effortless.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-    name: "Bilal Ahmed",
-    role: "IT Manager",
+    text: "Chegou certinho.",
+    image: "/clientes/cliente2.jpeg",
+    name: "Nay Silva",
+    role: "Cliente TikTok Shop",
   },
   {
-    text: "The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our satisfaction.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    name: "Saman Malik",
-    role: "Customer Support Lead",
+    text: "Adorei, perfeito, bom tramanho.",
+    image: "/clientes/cliente3.jpeg",
+    name: "Livia",
+    role: "Cliente TikTok Shop",
   },
   {
-    text: "This ERP's seamless integration enhanced our business operations and efficiency. Highly recommend for its intuitive interface.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-    name: "Omar Raza",
-    role: "CEO",
+    text: "Chegou em perfeito estado, muito bem embalado.",
+    image: "/clientes/cliente4.jpeg",
+    name: "Duas Entrelinhas",
+    role: "Loja de lingerie e moda intima",
   },
   {
     text: "Its robust features and quick support have transformed our workflow, making us significantly more efficient.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
+    image: "/clientes/cliente5.jpeg",
     name: "Zainab Hussain",
-    role: "Project Manager",
+    role: "Cliente",
   },
   {
-    text: "The smooth implementation exceeded expectations. It streamlined processes, improving overall business performance.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    name: "Aliza Khan",
-    role: "Business Analyst",
+    text: "Sao perfeitos",
+    image: "/clientes/cliente6.jpeg",
+    name: "Gabriela Sousa",
+    role: "Cliente tiktok shop",
   },
   {
-    text: "Our business functions improved with a user-friendly design and positive customer feedback.",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
-    name: "Farhan Siddiqui",
-    role: "Marketing Director",
+    text: "Bonitinho mas bem pequeno se atente as medidas nao e a proposcao da foto.",
+    image: "/clientes/cliente7.jpeg",
+    name: "Tatiana",
+    role: "Cliente",
   },
   {
-    text: "They delivered a solution that exceeded expectations, understanding our needs and enhancing our operations.",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
-    name: "Sana Sheikh",
-    role: "Sales Manager",
+    text: "A encomenda chegou bem antes do prazo e a qualidade me surpreendeu bastante.",
+    image: "/clientes/cliente8.jpeg",
+    name: "Luana",
+    role: "Cliente TikTok Shop",
   },
-  {
-    text: "Using this ERP, our online presence and conversions significantly improved, boosting business performance.",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
-    name: "Hassan Ali",
-    role: "E-commerce Manager",
-  },
+
 ];
 
 const logos = [
@@ -293,21 +288,11 @@ export default function Content() {
         <AnimateIn>
           <div id="contact" className="flex w-full justify-center bg-transparent">
             <div className="w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-              <Contact2
-                // title="Entre em Contato"
-                // description="Estamos disponíveis para dúvidas, feedback ou oportunidades de colaboração. Diga-nos como podemos ajudar!"
-                // phone="(123) 34567890"
-                // email="email@example.com"
-                // web={{
-                //   label: "shadcnblocks.com",
-                //   url: "https://shadcnblocks.com",
-                // }}
-              />
+              <Contact2/>
             </div>
           </div>
         </AnimateIn>
 
-        {/* <FaqsSection /> */}
 
         <AnimateIn>
           <Footer
